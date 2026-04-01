@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.bgImage{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;
+}
+
+body > div{
+	color: white;
+	height: 100vh;
+	z-index: 1;
+}
