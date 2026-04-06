@@ -10,36 +10,36 @@
 	<img class='bgImage'src="designproj.jpg">
 	<div class="container">
 		<div class='imgSide'>
-			<div><p><img class='odinLogo'>Odin</p></div>
+			<div><p><img class='odinLogo' src='odin-lined.png' style='display: inline;'>Odin</p></div>
 		</div>
 		<div class='textSide'>
-			<div class='signUp'>
-				<div class='top'><p>Not a Real Service bro!</p></div>
-				<div class='sign'>
-					<form>
-						<fieldset class='leftSection'>
-							<label for='firstName'>FIRST NAME</label>
-							<input id='firstName' type='text' name='fname'>
-							<label for='email'>EMAIL</label>
-							<input type='email' name='email' id='email'>
-							<label for='pword'>PASSWORD</label>
-							<input type='password' name='password' id='pword'>
-						</fieldset>
-						<fieldset class='rightSection'>
-							<label for='lastName'>LAST NAME</label>
-							<input type='text' name='lname'>
-							<label for='number'>PHONE NUMBER</label>
-							<input type='number' name='number' id='number'>
-							<label for='pwordConfirm'>CONFIRM PASSWORD</label>
-							<input type='password' name='pwordConfirm' id='pwordConfirm'>
-						</fieldset>
-						<fieldset class='under'>
-							<button class='submit'>Create Account</button>
-							<p>Already have an account? <span class='logIn'>Log in</span></p>
-						</fieldset>
-					</form>
+			<div class='top'><p><strong>Not a Real Service bro!</strong></p></div>
+			<form class="sign">
+				<p><strong>Let's do this!</strong></p>
+				<div>
+					<fieldset class='leftSection'>
+						<label for='firstName'>FIRST NAME</label>
+						<input id='firstName' type='text' name='fname' required>
+						<label for='email'>EMAIL</label>
+						<input type='email' name='email' id='email' required>
+						<label for='pword'>PASSWORD</label>
+						<input type='password' name='password' id='pword' required>
+					</fieldset>
+					<fieldset class='rightSection'>
+						<label for='lastName'>LAST NAME</label>
+						<input type='text' name='lname' required>
+						<label for='number' max='10'>PHONE NUMBER</label>
+						<input type='number' name='number' id='number' required minlength='8' maxlength='30'>
+						<label for='pwordConfirm'>CONFIRM PASSWORD</label>
+						<input type='password' name='pwordConfirm' id='pwordConfirm' required minlength='8'
+						maxlength='30'>
+					</fieldset>
 				</div>
-			</div>
+				<fieldset class='under'>
+					<button class='submit'>Create Account</button>
+					<p><strong>Already have an account? </strong><a class='logIn' href='#'>Log in</a></p>
+				</fieldset>
+			</form>
 		</div>
 	</div>
 </body>
